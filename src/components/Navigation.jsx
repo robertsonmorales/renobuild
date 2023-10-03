@@ -3,22 +3,45 @@ import { Phone } from 'react-feather';
 
 export default function Navigation() {
     return (
-        <nav>
-            <h4>Renobuild<span className="text-accent">.</span></h4>
-            <ul className="nav-list">
-                <li className="nav-list-item">Home</li>
-                <li className="nav-list-item">Services</li>
-                <li className="nav-list-item">Projects</li>
-                <li className="nav-list-item">About Us</li>
-                <li className="nav-list-item">FAQs</li>
-                <li className="nav-list-item">Contact Us</li>
-            </ul>
-            <div className="call-now">
-                <a href="tel:+639123456789">
+        <nav className="sticky flex justify-between items-center">
+
+            <div className="grow-0">
+                <h4 className="text-2xl font-bold">
+                    Renobuild
+                    <span className="text-orange-500">.</span>
+                </h4>
+            </div>
+
+            <div className="grow">
+                <ul className="flex justify-center items-center gap-x-10" role="list">
+                    <li className="text-[18px] text-orange-500 font-medium">
+                        <a href="#">Home</a>
+                    </li>
+                    <li className="text-[18px] text-slate-600">
+                        <a href="#">Services</a>
+                    </li>
+                    <li className="text-[18px] text-slate-600">
+                        <a href="#">Projects</a>
+                    </li>
+                    <li className="text-[18px] text-slate-600">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li className="text-[18px] text-slate-600">
+                        <a href="#">FAQs</a>
+                    </li>
+                    <li className="text-[18px] text-slate-600">
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div className="grow-0">
+                <a href="tel:+639123456789" className="flex items-center">
                     <Phone />
-                    <span>+63 9123456789</span>
+                    <span className="ml-1">+63 9123456789</span>
                 </a>
             </div>
+
         </nav>
     );
 }

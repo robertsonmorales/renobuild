@@ -1,9 +1,10 @@
 import Home from "./pages/Home";
-import './sass/style.css';
 
 function App() {
   return (
-    <Home />
+    <div className="mx-28 my-9">
+      <Home />
+    </div>
   );
 }
 
