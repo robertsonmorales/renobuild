@@ -4,15 +4,15 @@ import HeroImage from "../img/hero.jpg";
 
 const Hero = () => {
     return(
-        <div className="flex justify-center items-center flex-col gap-8 mt-14">
+        <div className="flex justify-center items-center flex-col gap-8 my-20">
             <div className="text-center">
                 <h1 className="text-7xl font-bold mb-4">Unleash the Full Potential of Your Space with our Expertise!</h1>
                 <p className="text-[18px] text-slate-600">Transform Your Space Where Quality Construction Meets Creative Renovation</p>
             </div>
 
             <div className="flex gap-4">
-                <button className="bg-orange-500 text-white text-[18px] px-6 py-4 rounded-2xl shadow-2xl">Our Services</button>
-                <button className="text-[18px] px-6 py-4 rounded-2xl border-2 border-solid border-slate-700">See Projects →</button>
+                <button className="text-[18px] px-6 py-3 rounded-2xl shadow-2xl active:shadow-1xl bg-amber-700 text-white duration-200 hover:bg-orange-400 active:bg-orange-600">Our Services</button>
+                <button className="text-[18px] px-6 py-3 rounded-2xl shadow-2xl duration-200 border-2 border-solid border-slate-700 hover:bg-slate-200 active:bg-slate-300">See Projects →</button>
             </div>
 
             <div className="flex items-center justify-center w-full">
