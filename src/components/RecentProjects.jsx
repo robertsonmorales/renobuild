@@ -32,7 +32,7 @@ const Project = ({ service_type, description, image }) => {
     };
 
     return (
-        <div className="flex flex-col shadow-3xl border border-neutral-300 rounded-3xl p-2 z-10 h-96 relative"
+        <div className="flex flex-col border border-neutral-300 rounded-3xl p-2 z-10 h-96 relative"
             dir="ltr"
             style={styling}>
 
@@ -42,7 +42,7 @@ const Project = ({ service_type, description, image }) => {
                 </div>
             </div>
 
-            <div className="flex flex-col gap-y-1 bg-slate-100 shadow-2xl rounded-l-3xl rounded-b-3xl rounded-t-2xl rounded-r-2xl p-4 absolute bottom-2 left-2 right-2">
+            <div className="flex flex-col gap-y-1 bg-slate-100 shadow-2xl rounded-b-2xl rounded-t-3xl p-4 absolute bottom-2 left-2 right-2">
                 <span className="text-orange-500 text-sm">{ service_type }</span>
                 <p className="text-xl text-neutral-600">{ description }</p>
             </div>

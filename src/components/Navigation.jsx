@@ -8,13 +8,13 @@ export default function Navigation() {
             <div className="grow-0">
                 <h4 className="text-2xl font-bold">
                     Renobuild
-                    <span className="text-orange-500">.</span>
+                    <span className="text-amber-700">.</span>
                 </h4>
             </div>
 
             <div className="grow">
                 <ul className="flex justify-center items-center gap-x-10" role="list">
-                    <li className="text-[18px] text-orange-500 font-medium">
+                    <li className="text-[18px] text-amber-700 font-medium">
                         <a href="#">Home</a>
                     </li>
                     <li className="text-[18px] text-slate-600">
