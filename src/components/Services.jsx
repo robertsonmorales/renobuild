@@ -1,4 +1,5 @@
 import React from "react";
+import Subheadline from "./Subheadline";
 
 import RenovationAndRemodeling from "../img/services/renovation-and-remodel.svg";
 import InteriorDesign from "../img/services/interior-design.svg";
@@ -9,26 +10,29 @@ import LightningAndElectricalServices from "../img/services/lighting-and-electri
 
 const ServiceCard = ({ icon, title, description }) => {
     return (
-        <div className="bg-slate-100 shadow-3xl border border-neutral-300 rounded-3xl py-9 px-8 z-10">
-            <div className="flex flex-col gap-y-6">
-                <img src={ icon } alt={ title } width={40} height={40} />
-                <h5 className="font-bold text-2xl">{ title }</h5>
-                <p className="text-[18px] text-slate-600">{ description }</p>
-            </div>
+        <div className="flex flex-col justify-between gap-y-6 bg-slate-100 shadow-3xl border border-neutral-300 rounded-3xl py-9 px-8 z-10">
+            <img src={ icon } alt={ title } width={40} height={40} />
+
+            <h5 className="font-bold text-2xl">{ title }</h5>
+
+            <p className="text-[18px] text-neutral-600">{ description }</p>
+
+            <a href="#" className="text-neutral-600 text-[18px]">Read More →</a>
+            
         </div>
     );
 }
 
-const Services = () => {
+function Services() {
     return(
-        <div className="bg-sky-100/50 py-20 px-28">
+        <div className="bg-sky-100/50 px-24 py-20">
 
             <div className="flex flex-col gap-y-16 ">
 
-                <div className="flex justify-center items-center flex-col">
-                    <h3 className="text-4xl font-bold mb-4">Our Services</h3>
-                    <p className="text-[18px] text-center text-slate-600 leading-6 w-7/12">Whether it's renovating, repairing, or constructing, we go above and beyond to exceed your expectations, ensuring that every project is executed with excellence. Experience the difference of our exceptional construction services and elevate your spaces to new heights with Renobuild.</p>
-                </div>
+                <Subheadline 
+                    subheadline="Our Services"
+                    description="Whether it's renovating, repairing, or constructing, we go above and beyond to exceed your expectations, ensuring that every project is executed with excellence. Experience the difference of our exceptional construction services and elevate your spaces to new heights with Renobuild."
+                />
 
                 <div className="grid grid-cols-3 gap-6 relative">
 

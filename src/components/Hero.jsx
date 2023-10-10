@@ -6,7 +6,7 @@ const Hero = () => {
     return(
         <div className="flex justify-center items-center flex-col gap-8 my-20">
             <div className="text-center">
-                <h1 className="text-7xl font-bold mb-4">Unleash the Full Potential of Your Space with our Expertise!</h1>
+                <h1 className="text-6xl font-bold mb-4">Unleash the Full Potential of Your Space with our Expertise!</h1>
                 <p className="text-[18px] text-slate-600">Transform Your Space Where Quality Construction Meets Creative Renovation</p>
             </div>
 
