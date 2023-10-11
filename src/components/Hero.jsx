@@ -11,7 +11,7 @@ const Hero = () => {
 
             <div className="flex gap-4">
                 <button className="text-[18px] px-6 py-3 rounded-2xl shadow-2xl active:shadow-1xl bg-amber-700 text-white duration-200 hover:bg-amber-600 active:bg-amber-700">Our Services</button>
-                <button className="text-[18px] px-6 py-3 rounded-2xl shadow-2xl duration-200 border-2 border-solid border-slate-700 hover:bg-slate-200 active:bg-slate-300">See Projects →</button>
+                <button className="text-[18px] px-6 py-3 rounded-2xl shadow-2xl duration-200 border-2 border-solid border-slate-700 hover:bg-sky-950/75 hover:text-white active:bg-sky-950 active:text-white">See Projects →</button>
             </div>
 
             <div className="flex items-center justify-center w-full">
@@ -24,6 +24,8 @@ const Hero = () => {
                     className="object-cover w-full h-96 rounded-3xl shadow-2xl" 
                     alt="Hero Banner" />
             </div>
+
+            <div className="w-80 h-80 rounded-full bg-orange-500/75 blur-xxl absolute translate-x-1/2 translate-y-1/2 z-0"></div>
         </div>
     )
 }

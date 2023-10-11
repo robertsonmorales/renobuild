@@ -32,17 +32,18 @@ const Project = ({ service_type, description, image }) => {
     };
 
     return (
-        <div className="flex flex-col border border-neutral-300 rounded-3xl p-2 z-10 h-96 relative"
+        <div className="flex flex-col border border-neutral-300 rounded-3xl p-2 z-10 h-96 relative transition-all duration-300 ease-in-out hover:opacity-95 hover:shadow-2xl"
             dir="ltr"
             style={styling}>
 
             <div className="flex items-center justify-end">
-                <div className="bg-slate-100 rounded-full w-11 h-11 flex items-center justify-center">
+                <a href="/view-project" 
+                    className="bg-slate-100 rounded-full w-11 h-11 flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-amber-700 hover:text-white hover:shadow-2xl">
                     <ExternalLink size={20} />
-                </div>
+                </a>
             </div>
 
-            <div className="flex flex-col gap-y-1 bg-slate-100 shadow-2xl rounded-b-2xl rounded-t-3xl p-4 absolute bottom-2 left-2 right-2">
+            <div className="flex flex-col gap-y-1 bg-slate-100 shadow-xl rounded-b-2xl rounded-t-3xl p-4 absolute bottom-2 left-2 right-2">
                 <span className="text-orange-500 text-sm">{ service_type }</span>
                 <p className="text-xl text-neutral-600">{ description }</p>
             </div>
@@ -72,6 +73,12 @@ const RecentProjects = () => {
                 <div className="grid grid-cols-3 gap-6">
                     { renderProjects }
                 </div>
+
+                <div className="text-center">
+                    <a href="/view-more" className="text-amber-600 font-medium font-base hover:underline">View More</a>
+                </div>
+
+                <div className="w-80 h-80 rounded-full bg-orange-500/50 blur-xxl absolute translate-x-1/2 translate-y-1/2 z-0"></div>
             </div>
         </div>
     )
