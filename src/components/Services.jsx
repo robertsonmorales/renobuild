@@ -10,14 +10,14 @@ import LightningAndElectricalServices from "../img/services/lighting-and-electri
 
 const ServiceCard = ({ icon, title, description }) => {
     return (
-        <div className="flex flex-col justify-between gap-y-6 bg-slate-100 shadow-3xl border border-neutral-300 rounded-3xl py-9 px-8 z-10">
+        <div className="flex flex-col justify-between gap-y-6 bg-slate-100 shadow-3xl border border-neutral-300 rounded-3xl p-6 z-10">
             <img src={ icon } alt={ title } width={40} height={40} />
 
             <h5 className="font-bold text-2xl">{ title }</h5>
 
             <p className="text-[18px] text-neutral-600">{ description }</p>
 
-            <a href="#" className="text-neutral-600 text-[18px]">Read More →</a>
+            <a href="/read-more" rel="noreferrer noopener" className="text-neutral-600 text-[18px]">Read More →</a>
             
         </div>
     );
@@ -27,7 +27,7 @@ function Services() {
     return(
         <div className="bg-sky-100/50 px-24 py-20">
 
-            <div className="flex flex-col gap-y-16 ">
+            <div className="flex flex-col gap-y-16">
 
                 <Subheadline 
                     subheadline="Our Services"

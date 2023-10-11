@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Subheadline from "./Subheadline";
 import { ExternalLink } from "react-feather";
 
@@ -52,8 +52,9 @@ const Project = ({ service_type, description, image }) => {
 }
 
 const RecentProjects = () => {
-    const renderProjects = data.map(project => {
+    const renderProjects = data.map((project, index) => {
         return <Project 
+            key={ index }
             service_type={ project.service_type }
             description={ project.description }
             image={ project.image }

@@ -35,9 +35,10 @@ const AboutUs = () => {
 
     const renderStats = data.map((d, index) => {
         return <Stats 
+            key={ index }
             count={ d.count }
             label={ d.label }
-            isLastItem={(data.length == (index + 1))}
+            isLastItem={(data.length === (index + 1))}
         />;
     });
 
@@ -51,7 +52,7 @@ const AboutUs = () => {
                     </div>
                     <div className="w-ful">
                         <button type="button" 
-                            className="text-[18px] px-6 py-3 rounded-2xl shadow-2xl duration-200 bg-slate-700 hover:bg-slate-600 active:bg-slate-700 text-white">Meet Our Team</button>
+                            className="text-[18px] px-6 py-3 rounded-2xl shadow-2xl duration-200 bg-sky-950 hover:bg-sky-950/75 active:bg-sky-950 text-white">Meet Our Team</button>
                     </div>
                 </div>
                 <div className="auto-cols-auto">

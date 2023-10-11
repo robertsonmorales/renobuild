@@ -1,5 +1,4 @@
 import React from "react";
-import { Play } from 'react-feather';
 import HeroImage from "../img/hero.jpg";
 
 const Hero = () => {
