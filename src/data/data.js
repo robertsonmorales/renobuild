@@ -3,7 +3,7 @@
 import RenovationAndRemodeling from "../img/services/renovation-and-remodel.svg";
 import InteriorDesign from "../img/services/interior-design.svg";
 import FlooringInstallation from "../img/services/flooring-installation.svg";
-import KitchenAndBathroomUpgrades from "../img/services/kitchen&bathroom.svg";
+import KitchenAndBathroomUpgrades from "../img/services/kitchen-and-bathroom.svg";
 import PaintingAndWallpapering from "../img/services/painting-and-wallpapering.svg";
 import LightningAndElectricalServices from "../img/services/lighting-and-electrical-services.svg";
 

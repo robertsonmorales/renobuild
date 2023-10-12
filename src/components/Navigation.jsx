@@ -1,5 +1,5 @@
 import React from "react";
-import { Phone } from 'react-feather';
+import { Phone, Menu } from 'react-feather';
 
 export default function Navigation() {
     return (
@@ -12,8 +12,8 @@ export default function Navigation() {
                 </h4>
             </div>
 
-            <div className="grow">
-                <ul className="flex justify-center items-center gap-x-7" role="list">
+            <div className="grow md:grow-0">
+                <ul className="flex justify-center items-center gap-x-7 md:hidden">
                     <li className="text-[18px] text-amber-700 font-medium hover:text-amber-700/75 active:text-amber-700 hover:scale-105">
                         <a href="#">Home</a>
                     </li>
@@ -36,9 +36,11 @@ export default function Navigation() {
                         <a href="#contact-us">Contact Us</a>
                     </li>
                 </ul>
+
+                <Menu />
             </div>
 
-            <div className="grow-0">
+            <div className="grow-0 md:hidden">
                 <a href="tel:+639123456789" className="text-[18px] flex items-center text-orange-500">
                     <Phone />
                     <span className="ml-1">+63 9123456789</span>

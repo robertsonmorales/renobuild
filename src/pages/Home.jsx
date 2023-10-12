@@ -12,7 +12,7 @@ import Footer from "../components/Footer";
 export default function Home() {
     return(
         <>
-            <div className="bg-sky-100/50 px-24 py-9">
+            <div className="bg-sky-100/50 lg:px-24 md:p-6 lg:py-9">
                 <Navigation />
                 <Hero />
             </div>

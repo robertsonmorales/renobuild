@@ -21,16 +21,16 @@ const ServiceCard = ({ icon, title, description }) => {
 
 const Services = () => {
     return(
-        <div className="bg-sky-100/50 px-24 py-20" id="services">
+        <div className="bg-sky-100/50 md:px-6 lg:px-24 md:py-12 lg:py-20" id="services">
 
-            <div className="flex flex-col gap-y-16">
+            <div className="flex flex-col md:gap-y-12 lg:gap-y-16">
 
                 <Subheadline 
                     subheadline="Our Services"
                     description="Whether it's renovating, repairing, or constructing, we go above and beyond to exceed your expectations, ensuring that every project is executed with excellence. Experience the difference of our exceptional construction services and elevate your spaces to new heights with Renobuild."
                 />
 
-                <div className="grid grid-cols-3 gap-6 relative">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 relative">
 
                     { RenobuildServices.map(({icon, title, description}, index) => {
                         return <ServiceCard 
