@@ -1,45 +1,6 @@
 import React from "react";
 import Subheadline from "./Subheadline";
-
-import RenovationAndRemodeling from "../img/services/renovation-and-remodel.svg";
-import InteriorDesign from "../img/services/interior-design.svg";
-import FlooringInstallation from "../img/services/flooring-installation.svg";
-import KitchenAndBathroomUpgrades from "../img/services/kitchen&bathroom.svg";
-import PaintingAndWallpapering from "../img/services/painting-and-wallpapering.svg";
-import LightningAndElectricalServices from "../img/services/lighting-and-electrical-services.svg";
-
-const data = [
-    {
-        icon: RenovationAndRemodeling,
-        title: "Renovation and Remodeling",
-        description: "Transform the interiors of your apartment with Renobuild's expert renovation and remodeling services. Enhance the aesthetics, functionality, and overall appeal of your living space to meet your unique style and preferences."
-    },
-    {
-        icon: InteriorDesign,
-        title: "Interior Design",
-        description: "Collaborate with Renobuild's skilled interior designers to create a personalized and inviting ambiance in your apartment. From color schemes and furniture selection to lighting and decor, achieve a cohesive and visually stunning interior design."
-    },
-    {
-        icon: FlooringInstallation,
-        title: "Flooring Installation",
-        description: "Upgrade the flooring in your apartment with Renobuild's professional flooring installation services. Choose from a variety of high-quality materials such as hardwood, laminate, tile, or carpet, and achieve a beautiful and durable flooring solution."
-    },
-    {
-        icon: KitchenAndBathroomUpgrades,
-        title: "Kitchen and Bathroom Upgrades",
-        description: "Renobuild specializes in kitchen and bathroom renovations, delivering functional and stylish spaces. From custom cabinetry and countertops to modern fixtures and appliances, revitalize these essential areas of your apartment."
-    },
-    {
-        icon: PaintingAndWallpapering,
-        title: "Painting and Wallpapering",
-        description: "Give your apartment a fresh look with Renobuild's painting and wallpapering services. Choose from a wide range of colors, finishes, and patterns to add personality and elegance to your living space."
-    },
-    {
-        icon: LightningAndElectricalServices,
-        title: "Lighting and Electrical Services",
-        description: "Illuminate your apartment with Renobuild's lighting and electrical solutions. Upgrade to energy-efficient LED lighting, install smart home systems, or enhance safety with electrical repairs and installations."
-    }
-];
+import { RenobuildServices } from "../data/data";
 
 const ServiceCard = ({ icon, title, description }) => {
     return (
@@ -58,9 +19,9 @@ const ServiceCard = ({ icon, title, description }) => {
     );
 }
 
-function Services() {
+const Services = () => {
     return(
-        <div className="bg-sky-100/50 px-24 py-20">
+        <div className="bg-sky-100/50 px-24 py-20" id="services">
 
             <div className="flex flex-col gap-y-16">
 
@@ -71,7 +32,7 @@ function Services() {
 
                 <div className="grid grid-cols-3 gap-6 relative">
 
-                    { data.map(({icon, title, description}, index) => {
+                    { RenobuildServices.map(({icon, title, description}, index) => {
                         return <ServiceCard 
                             key={ index }
                             icon={ icon }

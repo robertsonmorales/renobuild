@@ -1,28 +1,7 @@
 import React from "react";
 import Subheadline from "./Subheadline";
 import { ExternalLink } from "react-feather";
-
-import Project1 from "../img/projects/project-1.webp"
-import Project2 from "../img/projects/project-2.webp"
-import Project3 from "../img/projects/project-3.webp"
-
-const data = [
-    {
-        service_type: "Kitchen and Bathroom Upgrades",
-        description: "Upgrading the kitchen and bathroom spaces can significantly enhance the functionality, aesthetics, and overall value of a home.",
-        image: Project1
-    },
-    {
-        service_type: "Renovation and Remodeling",
-        description: "Swimming pool renovation and remodel project with the homeowner.",
-        image: Project2
-    },
-    {
-        service_type: "Interior Design",
-        description: "Creating beautiful and functional spaces that reflect the client's style and preferences.",
-        image: Project3
-    }
-];
+import { RenobuildRecentProjects } from "../data/data";
 
 const Project = ({ service_type, description, image }) => {
     const styling = {
@@ -53,7 +32,7 @@ const Project = ({ service_type, description, image }) => {
 }
 
 const RecentProjects = () => {
-    const renderProjects = data.map((project, index) => {
+    const renderProjects = RenobuildRecentProjects.map((project, index) => {
         return <Project 
             key={ index }
             service_type={ project.service_type }
@@ -63,7 +42,7 @@ const RecentProjects = () => {
     });
 
     return(
-        <div className="bg-white px-24 py-20">
+        <div className="bg-white px-24 py-20" id="projects">
             <div className="flex flex-col gap-y-16 ">
                 <Subheadline
                     subheadline="Our Recent Projects"

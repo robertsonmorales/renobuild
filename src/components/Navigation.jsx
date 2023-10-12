@@ -13,24 +13,27 @@ export default function Navigation() {
             </div>
 
             <div className="grow">
-                <ul className="flex justify-center items-center gap-x-10" role="list">
+                <ul className="flex justify-center items-center gap-x-7" role="list">
                     <li className="text-[18px] text-amber-700 font-medium hover:text-amber-700/75 active:text-amber-700 hover:scale-105">
                         <a href="#">Home</a>
                     </li>
                     <li className="text-[18px] text-slate-600 transition-all duration-300 ease-in-out hover:scale-105 active:text-amber-700">
-                        <a href="#">Services</a>
+                        <a href="#services">Services</a>
                     </li>
                     <li className="text-[18px] text-slate-600 transition-all duration-300 ease-in-out hover:scale-105 active:text-amber-700">
-                        <a href="#">Projects</a>
+                        <a href="#projects">Projects</a>
                     </li>
                     <li className="text-[18px] text-slate-600 transition-all duration-300 ease-in-out hover:scale-105 active:text-amber-700">
-                        <a href="#">About Us</a>
+                        <a href="#about-us">About Us</a>
                     </li>
                     <li className="text-[18px] text-slate-600 transition-all duration-300 ease-in-out hover:scale-105 active:text-amber-700">
-                        <a href="#">FAQs</a>
+                        <a href="#testimonials">Testimonials</a>
                     </li>
                     <li className="text-[18px] text-slate-600 transition-all duration-300 ease-in-out hover:scale-105 active:text-amber-700">
-                        <a href="#">Contact Us</a>
+                        <a href="#faqs">FAQs</a>
+                    </li>
+                    <li className="text-[18px] text-slate-600 transition-all duration-300 ease-in-out hover:scale-105 active:text-amber-700">
+                        <a href="#contact-us">Contact Us</a>
                     </li>
                 </ul>
             </div>
