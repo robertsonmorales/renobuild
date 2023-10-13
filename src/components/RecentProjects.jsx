@@ -22,7 +22,7 @@ const Project = ({ service_type, description, image }) => {
                 </a>
             </div>
 
-            <div className="flex flex-col gap-y-1 bg-slate-100 shadow-xl rounded-2xl p-4 absolute bottom-2 left-2 right-2">
+            <div className="flex flex-col gap-y-1 bg-white shadow-xl rounded-2xl p-4 absolute bottom-2 left-2 right-2">
                 <span className="text-orange-500 text-sm">{ service_type }</span>
                 <p className="text-xl text-neutral-600">{ description }</p>
             </div>

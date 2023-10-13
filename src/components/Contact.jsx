@@ -4,7 +4,7 @@ import { User, AtSign, PhoneCall } from "react-feather";
 
 const Contact = () => {
     return (
-        <div className="grid grid-cols-2 items-center gap-x-10 bg-slate-100 px-24 py-20 relative" id="contact-us">
+        <div className="grid grid-cols-2 lg:items-center md:gap-x-6 lg:gap-x-10 bg-slate-100 md:px-6 lg:px-24 md:py-12 lg:py-20 relative" id="contact-us">
             <div className="auto-cols-auto flex flex-col items-start gap-8">
                 <div className="flex flex-col gap-y-4">
                     <h3 className="text-4xl font-bold">Innovation, Quality, <br /> Expertise, and <br />Trustworthiness</h3>

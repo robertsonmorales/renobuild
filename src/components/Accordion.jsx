@@ -14,7 +14,7 @@ const AccordionItem = ({ title, content }) => {
             <span className={`transform ${isOpen ? 'rotate-180' : 'rotate-0'}`}><ChevronUp size={16} /></span>
         </div>
         <div className={`${isOpen
-                ? 'py-4 px-6 max-h-screen transition-all duration-300 ease-in-out opacity-100'
+                ? 'bg-white py-4 px-6 max-h-screen transition-all duration-300 ease-in-out opacity-100'
                 : 'max-h-0 opacity-0'
             }`}>
             <p className='text-[18px] text-neutral-600 leading-6'>{ content }</p>

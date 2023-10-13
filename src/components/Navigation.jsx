@@ -13,7 +13,7 @@ export default function Navigation() {
             </div>
 
             <div className="grow md:grow-0">
-                <ul className="flex justify-center items-center gap-x-7 md:hidden">
+                <ul className="md:hidden lg:flex justify-center items-center gap-x-7">
                     <li className="text-[18px] text-amber-700 font-medium hover:text-amber-700/75 active:text-amber-700 hover:scale-105">
                         <a href="#">Home</a>
                     </li>
@@ -37,10 +37,12 @@ export default function Navigation() {
                     </li>
                 </ul>
 
-                <Menu />
+                <div className="lg:hidden">
+                    <Menu />
+                </div>
             </div>
 
-            <div className="grow-0 md:hidden">
+            <div className="grow-0 md:hidden lg:inline">
                 <a href="tel:+639123456789" className="text-[18px] flex items-center text-orange-500">
                     <Phone />
                     <span className="ml-1">+63 9123456789</span>
