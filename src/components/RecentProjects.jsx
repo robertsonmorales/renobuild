@@ -11,7 +11,7 @@ const Project = ({ service_type, description, image }) => {
     };
 
     return (
-        <div className="flex flex-col border border-neutral-300 rounded-3xl p-2 z-10 h-96 relative transition-all duration-300 ease-in-out hover:opacity-95 hover:shadow-2xl"
+        <div className="flex flex-col border border-neutral-300 rounded-3xl p-2 z-10 h-96 relative transition-all duration-300 ease-in-out hover:opacity-95 hover:shadow-2xl hover:scale-y-105"
             dir="ltr"
             style={styling}>
 
