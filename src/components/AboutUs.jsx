@@ -38,7 +38,7 @@ const AboutUs = () => {
     });
 
     return(
-        <div className="grid grid-cols-2 gap-x-10 bg-sky-100/50 px-24 py-20 relative" id="about-us">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 md:gap-y-10 lg:gap-x-10 bg-sky-100/50 md:px-6 lg:px-24 md:py-12 lg:py-20 relative" id="about-us">
             <div className="auto-cols-auto flex flex-col items-start gap-8">
                 <div className="flex flex-col gap-y-4">
                     <h3 className="text-4xl font-bold">About Us</h3>
@@ -50,8 +50,7 @@ const AboutUs = () => {
                 </div>
             </div>
             <div className="auto-cols-auto">
-
-                <div className="flex items-end bg-cover bg-center h-full rounded-3xl shadow-2xl relative" 
+                <div className="flex items-end bg-cover bg-center md:h-96 lg:h-full rounded-3xl shadow-2xl relative" 
                     style={ AboutUsStyling }>
                     <div className="flex items-center justify-between rounded-b-2xl rounded-t-3xl bg-white p-4 absolute bottom-2 left-2 right-2">
                         { renderStats }
