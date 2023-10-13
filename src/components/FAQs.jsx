@@ -14,7 +14,7 @@ const FAQs = () => {
             
             <Accordion />
 
-            <div className="w-80 h-80 rounded-full bg-amber-500/50 blur-xxl absolute translate-x-1/2 translate-y-1/2 z-0"></div>
+            <div className="w-80 h-80 rounded-full bg-amber-500/50 blur-xxl absolute translate-x-1/2 translate-y-1/2 z-0 pointer-events-none"></div>
 
         </div>
     );

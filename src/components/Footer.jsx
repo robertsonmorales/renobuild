@@ -11,8 +11,8 @@ import { Instagram,
 
 const Footer = () => {
     return (
-        <div className="bg-sky-950 px-24 py-20">
-            <div className="grid grid-cols-4 gap-x-6">
+        <div className="bg-sky-950 md:px-12 lg:px-24 md:py-12 lg:py-20">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 md:gap-y-6 lg:gap-x-6">
                 
                 <div className="flex flex-col gap-y-6">
                     <h3 className="text-3xl font-bold text-neutral-100">Renobuild<span className="text-amber-600">.</span></h3>
@@ -137,7 +137,12 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                
+            </div>
+
+            <div className="border border-neutral-400 w-full my-14"></div>
+
+            <div className="text-center">
+                <p className="text-[18px] text-neutral-300/75">© 2023 Renobuild. All Rights Reserved</p>
             </div>
         </div>
     );

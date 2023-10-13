@@ -4,7 +4,7 @@ import { RenobuildServices } from "../data/data";
 
 const ServiceCard = ({ icon, title, description }) => {
     return (
-        <div className="flex flex-col justify-between gap-y-6 bg-slate-100 shadow-3xl border border-neutral-300 rounded-3xl p-6 z-10 transition-all duration-300 ease-in-out hover:bg-white hover:shadow-2xl">
+        <div className="flex flex-col justify-between gap-y-6 bg-slate-100 shadow-3xl border border-neutral-300 rounded-3xl p-6 z-10 transition-all duration-300 ease-in-out hover:bg-white hover:shadow-2xl hover:scale-y-105">
             <img src={ icon } alt={ title } width={40} height={40} />
 
             <h5 className="font-bold text-2xl">{ title }</h5>

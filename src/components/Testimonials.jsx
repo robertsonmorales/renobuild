@@ -5,14 +5,16 @@ import { RenobuildTestimonials } from "../data/data";
 const TestimonialCard = ({ comment, name, company, profilePic }) => {
     return (
         <div className="flex items-start">
-            <div className="flex flex-col gap-y-6 bg-slate-100 shadow-3xl border border-neutral-300 rounded-3xl p-6 z-10">
+            <div className="flex flex-col gap-y-6 bg-slate-100 shadow-3xl border border-neutral-300 rounded-3xl p-6 z-10 transition-all duration-300 ease-linear hover:bg-white hover:shadow-2xl hover:scale-y-105">
                 <blockquote className="text-sky-950 text-2xl">{ comment }</blockquote>
 
                 <div className="flex items-center gap-4">
                     <img src={ profilePic }
                         alt={ name } 
                         width={ 50 } 
-                        height={ 50 } />
+                        height={ 50 }
+                        className="shadow-3xl rounded-full hover:opacity-90"
+                    />
 
                     <div className="flex flex-col items-start">
                         <h5 className="text-2xl font-bold">{ name }</h5>

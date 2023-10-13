@@ -39,12 +39,12 @@ const AboutUs = () => {
 
     return(
         <div className="grid md:grid-cols-1 lg:grid-cols-2 md:gap-y-10 lg:gap-x-10 bg-sky-100/50 md:px-6 lg:px-24 md:py-12 lg:py-20 relative" id="about-us">
-            <div className="auto-cols-auto flex flex-col items-start gap-8">
-                <div className="flex flex-col gap-y-4">
+            <div className="auto-cols-auto flex flex-col md:justify-center lg:items-start gap-8">
+                <div className="flex flex-col md:items-center gap-y-4">
                     <h3 className="text-4xl font-bold">About Us</h3>
-                    <p className="text-[18px] text-neutral-600">We are passionate about crafting excellence in every aspect of construction. With a relentless commitment to quality, innovation, and customer satisfaction, we redefine spaces and bring your visions to life. Our experienced team of professionals combines expertise with creativity to deliver exceptional results that exceed expectations. From concept to completion, Renobuild stands as your trusted partner, transforming properties into extraordinary spaces that inspire and captivate. With us, your construction journey is characterized by professionalism, integrity, and a dedication to creating environments that truly make a difference.</p>
+                    <p className="text-[18px] text-neutral-600 md:text-center md:w-3/4">We are passionate about crafting excellence in every aspect of construction. With a relentless commitment to quality, innovation, and customer satisfaction, we redefine spaces and bring your visions to life. Our experienced team of professionals combines expertise with creativity to deliver exceptional results that exceed expectations. From concept to completion, Renobuild stands as your trusted partner, transforming properties into extraordinary spaces that inspire and captivate. With us, your construction journey is characterized by professionalism, integrity, and a dedication to creating environments that truly make a difference.</p>
                 </div>
-                <div className="w-full">
+                <div className="w-full md:text-center">
                     <button type="button" 
                         className="text-[18px] px-6 py-3 rounded-2xl shadow-2xl duration-200 bg-sky-950 hover:bg-sky-950/75 active:bg-sky-950 text-white">Meet Our Team</button>
                 </div>
