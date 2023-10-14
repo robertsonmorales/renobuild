@@ -3,7 +3,7 @@ import HeroImage from "../img/hero.jpg";
 
 const Hero = () => {
     return(
-        <div className="flex justify-center items-center flex-col gap-8 my-12 lg:my-20">
+        <section className="flex justify-center items-center flex-col gap-8 my-12 lg:my-20" id="home">
             <div className="text-center">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Unleash the Full Potential of Your Space with our Expertise!</h1>
                 <p className="text-base lg:text-[18px] text-slate-600">Transform Your Space Where Quality Construction Meets Creative Renovation</p>
@@ -21,12 +21,12 @@ const Hero = () => {
                     </svg>
                 </button>
                 <img src={ HeroImage }
-                    className="object-cover w-full md:h-52 lg:h-96 rounded-3xl shadow-2xl" 
+                    className="object-cover w-full lg:h-96 rounded-3xl shadow-2xl" 
                     alt="Hero Banner" />
             </div>
 
-            <div className="w-80 h-80 rounded-full bg-orange-500/75 blur-xxl absolute translate-x-1/2 translate-y-1/2 z-0"></div>
-        </div>
+            <div className="w-56 h-56 lg:w-80 lg:h-80 rounded-full bg-orange-500/75 blur-xxl absolute z-0 pointer-events-none"></div>
+        </section>
     )
 }
 

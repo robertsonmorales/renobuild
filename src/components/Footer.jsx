@@ -75,10 +75,10 @@ const Footer = () => {
     }, [service, quickLink]);
 
     return (
-        <div className="bg-sky-950 px-6 lg:px-24 py-12 lg:py-20">
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-y-10 lg:gap-x-6">
+        <section className="bg-sky-950 px-6 md:px-12 lg:px-24 py-12 lg:py-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 md:gap-x-6">
                 
-                <div className="flex flex-col text-center lg:text-left gap-y-6">
+                <div className="flex flex-col text-center md:text-left gap-y-6">
                     <h3 className="text-3xl font-bold text-neutral-100">Renobuild<span className="text-amber-600">.</span></h3>
                     
                     <p className="text-neutral-300/75 text-[18px]">We are a leading construction services company dedicated to transforming spaces and creating exceptional environments.</p>
@@ -120,10 +120,10 @@ const Footer = () => {
                             <div className="flex flex-col md:flex-row items-center md:items-start gap-y-4 md:gap-x-4">
                                 <MessageCircle size={ 24 } />
 
-                                <ul className="flex flex-col items-center lg:items-start">
-                                    <li className="text-neutral-300/75 text-center lg:text-left">Email us</li>
-                                    <li className="text-neutral-300/75 text-center lg:text-left">Our friendly team is here to help.</li>
-                                    <li className="text-neutral-300/75 text-center lg:text-left">sayhello@renobuild.com</li>
+                                <ul className="flex flex-col">
+                                    <li className="text-neutral-300/75 text-center md:text-left">Email us</li>
+                                    <li className="text-neutral-300/75 text-center md:text-left">Our friendly team is here to help.</li>
+                                    <li className="text-neutral-300/75 text-center md:text-left">sayhello@renobuild.com</li>
                                 </ul>
                             </div>
                         </li>
@@ -132,9 +132,9 @@ const Footer = () => {
                                 <MapPin size={ 24 } />
 
                                 <ul className="flex flex-col">
-                                    <li className="text-neutral-300/75 text-center lg:text-left">Visit us</li>
-                                    <li className="text-neutral-300/75 text-center lg:text-left">Say hello at our Office HQ.</li>
-                                    <li className="text-neutral-300/75 text-center lg:text-left">123 Oak Street, Mandaluyong, Philippines</li>
+                                    <li className="text-neutral-300/75 text-center md:text-left">Visit us</li>
+                                    <li className="text-neutral-300/75 text-center md:text-left">Say hello at our Office HQ.</li>
+                                    <li className="text-neutral-300/75 text-center md:text-left">123 Oak Street, Mandaluyong, Philippines</li>
                                 </ul>
                             </div>
                         </li>
@@ -143,9 +143,9 @@ const Footer = () => {
                                 <PhoneCall size={ 24 } />
 
                                 <ul className="flex flex-col">
-                                    <li className="text-neutral-300/75 text-center lg:text-left">Call us</li>
-                                    <li className="text-neutral-300/75 text-center lg:text-left">We’re available from Mon-Fri, 9am to 6pm.</li>
-                                    <li className="text-neutral-300/75 text-center lg:text-left">+63 9123456789</li>
+                                    <li className="text-neutral-300/75 text-center md:text-left">Call us</li>
+                                    <li className="text-neutral-300/75 text-center md:text-left">We’re available from Mon-Fri, 9am to 6pm.</li>
+                                    <li className="text-neutral-300/75 text-center md:text-left">+63 9123456789</li>
                                 </ul>
                             </div>
                         </li>
@@ -158,7 +158,7 @@ const Footer = () => {
             <div className="text-center">
                 <p className="text-[18px] text-neutral-300/75">© 2023 Renobuild. All Rights Reserved</p>
             </div>
-        </div>
+        </section>
     );
 }
 

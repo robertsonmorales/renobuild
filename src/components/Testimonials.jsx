@@ -5,10 +5,10 @@ import { RenobuildTestimonials } from "../data/data";
 const TestimonialCard = ({ comment, name, company, profilePic }) => {
     return (
         <div className="flex items-start">
-            <div className="flex flex-col gap-y-6 bg-slate-100 shadow-3xl border border-neutral-300 rounded-3xl p-6 z-10 transition-all duration-300 ease-linear hover:bg-white hover:shadow-2xl hover:scale-y-105">
-                <blockquote className="text-sky-950 text-2xl">{ comment }</blockquote>
+            <div className="flex flex-col gap-y-6 bg-slate-100 shadow-3xl border border-neutral-300 rounded-3xl p-6 z-10 transition-all duration-300 ease-linear hover:bg-white hover:shadow-2xl">
+                <blockquote className="text-sky-950 text-[18px] lg:text-2xl">{ comment }</blockquote>
 
-                <div className="flex flex-col md:flexrow md:items-center gap-4">
+                <div className="flex flex-col md:flex-row md:items-center gap-4">
                     <img src={ profilePic }
                         alt={ name } 
                         width={ 50 } 
@@ -17,7 +17,7 @@ const TestimonialCard = ({ comment, name, company, profilePic }) => {
                     />
 
                     <div className="flex flex-col items-start">
-                        <h5 className="text-2xl font-bold">{ name }</h5>
+                        <h5 className="text-xl lg:text-2xl font-bold">{ name }</h5>
                         <p className="text-sm text-neutral-600">{ company }</p>
                     </div>
                 </div>
@@ -32,7 +32,7 @@ const Testimonials = () => {
     const [secondArray, setSecondArray] = useState([RenobuildTestimonials[2], RenobuildTestimonials[3]]);
 
     return(
-        <div className="bg-sky-950 px-6 lg:px-24 py-12 lg:py-20 flex flex-col gap-y-16" id="testimonials">
+        <section className="bg-sky-950 px-6 lg:px-24 py-12 lg:py-20 flex flex-col gap-y-16" id="testimonials">
             <Subheadline 
                 theme="dark"
                 subheadline="Discover What Our <br> Clients Have to Say"
@@ -67,7 +67,7 @@ const Testimonials = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

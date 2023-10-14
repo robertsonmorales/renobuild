@@ -21,7 +21,7 @@ const ServiceCard = ({ icon, title, description }) => {
 
 const Services = () => {
     return(
-        <div className="bg-sky-100/50 px-6 lg:px-24 py-12 lg:py-20" id="services">
+        <section className="bg-sky-100/50 px-6 lg:px-24 py-12 lg:py-20 relative" id="services">
 
             <div className="flex flex-col gap-y-12 lg:gap-y-16">
 
@@ -30,22 +30,22 @@ const Services = () => {
                     description="Whether it's renovating, repairing, or constructing, we go above and beyond to exceed your expectations, ensuring that every project is executed with excellence. Experience the difference of our exceptional construction services and elevate your spaces to new heights with Renobuild."
                 />
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 relative">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                    { RenobuildServices.map(({icon, title, description}, index) => {
-                        return <ServiceCard 
+                    { RenobuildServices.map(({ icon, title, description }, index) => 
+                        <ServiceCard 
                             key={ index }
                             icon={ icon }
                             title={ title }
                             description={ description }
                         />
-                    })}
-                    
-                    <div className="w-80 h-80 rounded-full bg-red-500/75 blur-xxl absolute translate-x-1/2 translate-y-1/2 z-0"></div>
+                    )}
                 </div>
             </div>
 
-        </div>
+            <div className="w-56 h-56 lg:w-80 lg:h-80 rounded-full bg-red-500/75 blur-xxl absolute left-0 top-0 translate-x-1/2 translate-y-1/2 z-0"></div>
+            
+        </section>
     );
 }
 
