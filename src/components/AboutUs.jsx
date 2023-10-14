@@ -24,21 +24,10 @@ const Stats = ({ count, label, isLastItem }) => {
 }
 
 const AboutUs = () => {
-    const AboutUsStyling = {
-        backgroundImage: `url(${AboutImage})`
-    };
-
-    const renderStats = data.map((d, index) => {
-        return <Stats 
-            key={ index }
-            count={ d.count }
-            label={ d.label }
-            isLastItem={(data.length === (index + 1))}
-        />;
-    });
+    const AboutUsStyling = { backgroundImage: `url(${AboutImage})` };
 
     return(
-        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-y-10 lg:gap-x-10 bg-sky-100/50 px-6 lg:px-24 py-12 lg:py-20 relative" id="about-us">
+        <section className="grid md:grid-cols-1 lg:grid-cols-2 gap-y-10 lg:gap-x-10 bg-sky-100/50 px-6 lg:px-24 py-12 lg:py-20 relative" id="about-us">
             <div className="auto-cols-auto flex flex-col md:justify-center lg:items-start gap-8">
                 <div className="flex flex-col items-center lg:items-start gap-y-4">
                     <h3 className="text-4xl font-bold">About Us</h3>
@@ -52,12 +41,19 @@ const AboutUs = () => {
             <div className="auto-cols-auto">
                 <div className="flex items-end bg-cover bg-center h-96 lg:h-full rounded-3xl shadow-2xl relative" 
                     style={ AboutUsStyling }>
-                    <div className="flex flex-col lg:flex-row items-center justify-between gap-y-2 rounded-2xl bg-white p-4 absolute bottom-2 left-2 right-2">
-                        { renderStats }
+                    <div className="flex flex-col md:flex-row items-center justify-between gap-y-2 rounded-2xl bg-white p-4 absolute bottom-2 left-2 right-2">
+                        { data.map((d, index) => 
+                            <Stats 
+                                key={ index }
+                                count={ d.count }
+                                label={ d.label }
+                                isLastItem={(data.length === (index + 1))}
+                            />
+                        )}
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

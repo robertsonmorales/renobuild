@@ -15,7 +15,7 @@ export default function Navigation() {
             <div className="grow-0 lg:grow">
                 <ul className="hidden lg:flex justify-center items-center gap-x-7">
                     <li className="text-[18px] text-amber-700 font-medium hover:text-amber-700/75 active:text-amber-700 hover:scale-105">
-                        <a href="#">Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li className="text-[18px] text-slate-600 transition-all duration-300 ease-in-out hover:scale-105 active:text-amber-700">
                         <a href="#services">Services</a>

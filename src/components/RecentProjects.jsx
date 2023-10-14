@@ -24,7 +24,7 @@ const Project = ({ service_type, description, image }) => {
 
             <div className="flex flex-col gap-y-1 bg-white shadow-xl rounded-2xl p-4 absolute bottom-2 left-2 right-2">
                 <span className="text-orange-500 text-sm">{ service_type }</span>
-                <p className="text-xl text-neutral-600">{ description }</p>
+                <p className="text-[18px] text-neutral-600">{ description }</p>
             </div>
 
         </div>
@@ -32,17 +32,8 @@ const Project = ({ service_type, description, image }) => {
 }
 
 const RecentProjects = () => {
-    const renderProjects = RenobuildRecentProjects.map((project, index) => {
-        return <Project 
-            key={ index }
-            service_type={ project.service_type }
-            description={ project.description }
-            image={ project.image }
-        />
-    });
-
     return(
-        <div className="bg-white px-6 lg:px-24 py-12 lg:py-20" id="projects">
+        <section className="bg-white px-6 lg:px-24 py-12 lg:py-20" id="projects">
             <div className="flex flex-col gap-y-12 lg:gap-y-16">
                 <Subheadline
                     subheadline="Our Recent Projects"
@@ -50,7 +41,14 @@ const RecentProjects = () => {
                 />
 
                 <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-6">
-                    { renderProjects }
+                    { RenobuildRecentProjects.map((project, index) =>
+                        <Project 
+                            key={ index }
+                            service_type={ project.service_type }
+                            description={ project.description }
+                            image={ project.image }
+                        />
+                    )}
                 </div>
 
                 <div className="text-center">
@@ -59,7 +57,7 @@ const RecentProjects = () => {
 
                 <div className="w-80 h-80 rounded-full bg-orange-500/50 blur-xxl absolute translate-x-1/2 translate-y-1/2 z-0"></div>
             </div>
-        </div>
+        </section>
     )
 }
 

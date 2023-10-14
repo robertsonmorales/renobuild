@@ -11,19 +11,24 @@ import Footer from "../components/Footer";
 
 export default function Home() {
     return(
-        <>
-            <div className="container bg-sky-100/50 p-6 lg:px-24 lg:py-9">
+        <div className="container">
+            <div className=" bg-sky-100/50 p-6 lg:px-24 lg:py-9">
                 <Navigation />
                 <Hero />
             </div>
             
-            <Services />
-            <RecentProjects />
-            <AboutUs />
-            <Testimonials />
-            <FAQs />
-            <Contact />
-            <Footer />
-        </>
+            <main>
+                <Services />
+                <RecentProjects />
+                <AboutUs />
+                <Testimonials />
+                <FAQs />
+                <Contact />
+            </main>
+
+            <footer>
+                <Footer />
+            </footer>
+        </div>
     )
 }
