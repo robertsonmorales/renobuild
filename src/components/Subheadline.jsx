@@ -1,14 +1,12 @@
 import React from "react";
-import * as Icon from 'react-feather';
 
-function Subheadline({ subheadline, description, theme = 'light', icon = null}) {    
-    const showIcon = (icon != null) ? <Icon.MessageCircle /> : '';
+function Subheadline({ subheadline, description, theme = 'light', children }) {    
     return (
         <div className="flex justify-center items-center flex-col">
             <h3 className={ (theme === 'dark' ? "text-white " : "") + "text-4xl text-center font-bold mb-4"  } dangerouslySetInnerHTML={{ __html: subheadline }} />
-            <p className={ (theme === 'dark' ? "text-neutral-200 " : "text-neutral-600 ") + "text-[18px] text-center leading-6 md:w-3/4 lg:w-7/12 flex items-center justify-center" }>
+            <p className={ (theme === 'dark' ? "text-neutral-200 " : "text-neutral-600 ") + "text-[18px] text-center leading-6 w-full lg:w-7/12" }>
                 <span>{ description }</span>
-                <span className="ml-2">{ showIcon }</span>
+                <span className="ml-2 hidden md:inline">{ children }</span>
             </p>
         </div>
     );

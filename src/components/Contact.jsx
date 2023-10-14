@@ -4,10 +4,10 @@ import { User, AtSign, PhoneCall } from "react-feather";
 
 const Contact = () => {
     return (
-        <div className="grid md:grid-cols-1 lg:grid-cols-2 lg:items-center md:gap-y-6 lg:gap-x-10 bg-slate-100 md:px-6 lg:px-24 md:py-12 lg:py-20 relative" id="contact-us">
-            <div className="auto-cols-auto flex flex-col md:items-center lg:items-start gap-y-4">
-                <h3 className="text-4xl font-bold md:text-center lg:text-left md:w-3/4 lg:w-full">Innovation, Quality, Expertise, and Trustworthiness</h3>
-                <p className="text-[18px] text-neutral-600 md:text-center lg:text-left md:w-3/4 lg:w-full">Ready to embark on your construction journey? Contact Renobuild today to unlock a world of tailored solutions, expert guidance, and exceptional craftsmanship. <br /><br />Our team is dedicated to bringing your vision to life, providing personalized attention to every detail. Let's collaborate and create something extraordinary together. Reach out now and let the transformation begin!</p>
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 lg:items-center gap-y-6 lg:gap-x-10 px-6 lg:px-24 py-12 lg:py-20 bg-slate-100 relative" id="contact-us">
+            <div className="auto-cols-auto flex flex-col items-center lg:items-start gap-y-4">
+                <h3 className="text-4xl font-bold text-center lg:text-left md:w-3/4 lg:w-full">Innovation, Quality, Expertise, and Trustworthiness</h3>
+                <p className="text-[18px] text-neutral-600 text-center lg:text-left md:w-3/4 lg:w-full">Ready to embark on your construction journey? Contact Renobuild today to unlock a world of tailored solutions, expert guidance, and exceptional craftsmanship. <br /><br />Our team is dedicated to bringing your vision to life, providing personalized attention to every detail. Let's collaborate and create something extraordinary together. Reach out now and let the transformation begin!</p>
             </div>
 
             <div className="bg-white p-6 rounded-2xl shadow-3xl">
