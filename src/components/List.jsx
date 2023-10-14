@@ -11,10 +11,10 @@ const ListItem = ({ route, name }) => {
 
 const List = ({ title, listItems = [], isRaw = false, children }) => {
     return (
-        <div className="flex flex-col items-center gap-y-6">
+        <div className="flex flex-col items-center lg:items-start gap-y-6">
             <h4 className="text-neutral-100 text-2xl font-bold">{ title }</h4>
         
-            <ul className="flex flex-col items-center gap-y-4">
+            <ul className="flex flex-col items-center lg:items-start gap-y-4">
                 {(!isRaw) ? listItems.map(({ route, name }, index) => <ListItem key={ index } route={ route } name={ name } /> 
                 ) : children }
             </ul>

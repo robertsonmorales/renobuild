@@ -9,7 +9,6 @@ const FAQs = () => {
             <Subheadline 
                 subheadline="Frequently <br> Asked Questions"
                 description="Can't find the answer? Chat to us"
-                icon={ MessageCircle }
             >
                 <MessageCircle />
             </Subheadline>
