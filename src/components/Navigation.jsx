@@ -12,8 +12,8 @@ export default function Navigation() {
                 </h4>
             </div>
 
-            <div className="grow md:grow-0">
-                <ul className="md:hidden lg:flex justify-center items-center gap-x-7">
+            <div className="grow-0 lg:grow">
+                <ul className="hidden lg:flex justify-center items-center gap-x-7">
                     <li className="text-[18px] text-amber-700 font-medium hover:text-amber-700/75 active:text-amber-700 hover:scale-105">
                         <a href="#">Home</a>
                     </li>
@@ -42,7 +42,7 @@ export default function Navigation() {
                 </div>
             </div>
 
-            <div className="grow-0 md:hidden lg:inline">
+            <div className="grow-0 hidden lg:inline">
                 <a href="tel:+639123456789" className="text-[18px] flex items-center text-orange-500">
                     <Phone />
                     <span className="ml-1">+63 9123456789</span>

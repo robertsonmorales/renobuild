@@ -3,13 +3,13 @@ import HeroImage from "../img/hero.jpg";
 
 const Hero = () => {
     return(
-        <div className="flex justify-center items-center flex-col gap-8 md:my-12 lg:my-20">
+        <div className="flex justify-center items-center flex-col gap-8 my-12 lg:my-20">
             <div className="text-center">
-                <h1 className="md:text-5xl lg:text-6xl font-bold mb-4">Unleash the Full Potential of Your Space with our Expertise!</h1>
-                <p className="md:text-base lg:text-[18px] text-slate-600">Transform Your Space Where Quality Construction Meets Creative Renovation</p>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Unleash the Full Potential of Your Space with our Expertise!</h1>
+                <p className="text-base lg:text-[18px] text-slate-600">Transform Your Space Where Quality Construction Meets Creative Renovation</p>
             </div>
 
-            <div className="flex gap-4">
+            <div className="w-full flex flex-col md:flex-row md:justify-center gap-4">
                 <button className="md:text-base lg:text-[18px] px-6 py-3 rounded-2xl shadow-2xl active:shadow-1xl bg-amber-700 text-white duration-200 hover:bg-amber-600 active:bg-amber-700">Our Services</button>
                 <button className="md:text-base lg:text-[18px] px-6 py-3 rounded-2xl shadow-2xl duration-200 border-2 border-solid border-slate-700 hover:bg-sky-950/75 hover:text-white active:bg-sky-950 active:text-white">See Projects →</button>
             </div>

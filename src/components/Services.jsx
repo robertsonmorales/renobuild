@@ -21,9 +21,9 @@ const ServiceCard = ({ icon, title, description }) => {
 
 const Services = () => {
     return(
-        <div className="bg-sky-100/50 md:px-6 lg:px-24 md:py-12 lg:py-20" id="services">
+        <div className="bg-sky-100/50 px-6 lg:px-24 py-12 lg:py-20" id="services">
 
-            <div className="flex flex-col md:gap-y-12 lg:gap-y-16">
+            <div className="flex flex-col gap-y-12 lg:gap-y-16">
 
                 <Subheadline 
                     subheadline="Our Services"

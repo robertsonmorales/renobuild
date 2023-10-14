@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Instagram,
     Facebook,
     Youtube,
@@ -9,134 +9,148 @@ import { Instagram,
     PhoneCall
 } from "react-feather";
 
+import List from "./List";
+
+const services = [
+    {
+        route: '/',
+        name: 'Renovation and Remodeling'
+    },
+    {
+        route: '/',
+        name: 'Interior Design'
+    },
+    {
+        route: '/',
+        name: 'Flooring Installation'
+    },
+    {
+        route: '/',
+        name: 'Kitchen and Bathroom Upgrades'
+    },
+    {
+        route: '/',
+        name: 'Painting and Wallpapering'
+    },
+    {
+        route: '/',
+        name: 'Lighting and Electrical Services'
+    }
+];
+
+const quickLinks = [
+    {
+        route: '#services',
+        name: 'Services'
+    },
+    {
+        route: '#projects',
+        name: 'Projects'
+    },
+    {
+        route: '#about-us',
+        name: 'About Us'
+    },
+    {
+        route: '#testimonials',
+        name: 'Testimonials'
+    },
+    {
+        route: '#faqs',
+        name: 'FAQs'
+    },
+    {
+        route: '#contact-us',
+        name: 'Contact Us'
+    }
+];
+
 const Footer = () => {
+    const [service, setServices] = useState([]);
+    const [quickLink, setQuickLinks] = useState([]);
+
+    useEffect(() => {
+        setServices(services);
+        setQuickLinks(quickLinks);
+    }, [service, quickLink]);
+
     return (
-        <div className="bg-sky-950 md:px-12 lg:px-24 md:py-12 lg:py-20">
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 md:gap-y-6 lg:gap-x-6">
+        <div className="bg-sky-950 px-6 lg:px-24 py-12 lg:py-20">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-y-10 lg:gap-x-6">
                 
-                <div className="flex flex-col gap-y-6">
+                <div className="flex flex-col text-center gap-y-6">
                     <h3 className="text-3xl font-bold text-neutral-100">Renobuild<span className="text-amber-600">.</span></h3>
                     
-                    <p className="text-neutral-300/75 text-[18px]">Renobuild is a leading construction services company dedicated to transforming spaces and creating exceptional environments.</p>
+                    <p className="text-neutral-300/75 text-[18px]">We are a leading construction services company dedicated to transforming spaces and creating exceptional environments.</p>
 
-                    <ul className="flex place-items-center gap-x-4">
+                    <ul className="flex justify-center md:justify-start gap-x-4">
                         <li className="text-neutral-300/75 transition-all duration-300 ease-out hover:text-neutral-100">
-                            <a href="">
+                            <a href="www.google.com?q=cat" target="_blank">
                                 <Instagram size={ 24 } />
                             </a>
                         </li>
                         <li className="text-neutral-300/75 transition-all duration-300 ease-out hover:text-neutral-100">
-                            <a href="">
+                            <a href="www.google.com?q=cat" target="_blank">
                                 <Facebook size={ 24 } />
                             </a>
                         </li>
                         <li className="text-neutral-300/75 transition-all duration-300 ease-out hover:text-neutral-100">
-                            <a href="">
+                            <a href="www.google.com?q=cat" target="_blank">
                                 <Youtube size={ 24 } />
                             </a>
                         </li>
                         <li className="text-neutral-300/75 transition-all duration-300 ease-out hover:text-neutral-100">
-                            <a href="">
+                            <a href="www.google.com?q=cat" target="_blank">
                                 <Twitter size={ 24 } />
                             </a>
                         </li>
                         <li className="text-neutral-300/75 transition-all duration-300 ease-out hover:text-neutral-100">
-                            <a href="">
+                            <a href="www.google.com?q=cat" target="_blank">
                                 <Linkedin size={ 24 } />
                             </a>
                         </li>
                     </ul>
                 </div>
 
-                <div className="flex flex-col gap-y-6">
-                    <h4 className="text-neutral-100 text-2xl font-bold">Services</h4>
-
-                    <ul className="flex flex-col place-items-start gap-y-4">
-                        <li className="text-neutral-300/75 leading-6 text-[18px] transition-all duration-300 ease-out hover:text-neutral-100">
-                            <a href="/read-more">Renovation and Remodeling</a>
-                        </li>
-                        <li className="text-neutral-300/75 leading-6 text-[18px] transition-all duration-300 ease-out hover:text-neutral-100">
-                            <a href="/read-more">Interior Design</a>
-                        </li>
-                        <li className="text-neutral-300/75 leading-6 text-[18px] transition-all duration-300 ease-out hover:text-neutral-100">
-                            <a href="/read-more">Flooring Installation</a>
-                        </li>
-                        <li className="text-neutral-300/75 leading-6 text-[18px] transition-all duration-300 ease-out hover:text-neutral-100">
-                            <a href="/read-more">Kitchen and Bathroom Upgrades</a>
-                        </li>
-                        <li className="text-neutral-300/75 leading-6 text-[18px] transition-all duration-300 ease-out hover:text-neutral-100">
-                            <a href="/read-more">Painting and Wallpapering</a>
-                        </li>
-                        <li className="text-neutral-300/75 leading-6 text-[18px] transition-all duration-300 ease-out hover:text-neutral-100">
-                            <a href="/read-more">Lighting and Electrical Services</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div className="flex flex-col gap-y-6">
-                    <h4 className="text-neutral-100 text-2xl font-bold">Quick Links</h4>
-
-                    <ul className="flex flex-col place-items-start gap-y-4">
-                        <li className="text-neutral-300/75 leading-6 text-[18px] transition-all duration-300 ease-out hover:text-neutral-100">
-                            <a href="#services">Services</a>
-                        </li>
-                        <li className="text-neutral-300/75 leading-6 text-[18px] transition-all duration-300 ease-out hover:text-neutral-100">
-                            <a href="#projects">Projects</a>
-                        </li>
-                        <li className="text-neutral-300/75 leading-6 text-[18px] transition-all duration-300 ease-out hover:text-neutral-100">
-                            <a href="#about-us">About Us</a>
-                        </li>
-                        <li className="text-neutral-300/75 leading-6 text-[18px] transition-all duration-300 ease-out hover:text-neutral-100">
-                            <a href="#testimonials">Testimonials</a>
-                        </li>
-                        <li className="text-neutral-300/75 leading-6 text-[18px] transition-all duration-300 ease-out hover:text-neutral-100">
-                            <a href="#faqs">FAQs</a>
-                        </li>
-                        <li className="text-neutral-300/75 leading-6 text-[18px] transition-all duration-300 ease-out hover:text-neutral-100">
-                            <a href="#contact-us">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div className="flex flex-col gap-y-6">
-                    <h4 className="text-neutral-100 text-2xl font-bold">Contacts</h4>
-
-                    <ul className="flex flex-col place-items-start gap-y-4">
+                <List title="Services" listItems={ service }></List>
+                <List title="Quick Links" listItems={ quickLink }></List>
+                <List title="Contacts" isRaw={ true }>
+                    <ul className="flex flex-col justify-center gap-y-10">
                         <li className="text-neutral-300/75 leading-6 text-[18px]">
-                            <div className="flex items-start gap-x-4">
+                            <div className="flex flex-col md:flex-row items-center md:items-start gap-y-4 md:gap-x-4">
                                 <MessageCircle size={ 24 } />
 
-                                <ul className="flex flex-col">
-                                    <li className="text-neutral-300/75">Email us</li>
-                                    <li className="text-neutral-300/75">Our friendly team is here to help.</li>
-                                    <li className="text-neutral-300/75">sayhello@renobuild.com</li>
+                                <ul className="flex flex-col items-center">
+                                    <li className="text-neutral-300/75 text-center">Email us</li>
+                                    <li className="text-neutral-300/75 text-center">Our friendly team is here to help.</li>
+                                    <li className="text-neutral-300/75 text-center">sayhello@renobuild.com</li>
                                 </ul>
                             </div>
                         </li>
                         <li className="text-neutral-300/75 leading-6 text-[18px]">
-                            <div className="flex items-start gap-x-4">
+                            <div className="flex flex-col md:flex-row items-center md:items-start gap-y-4 md:gap-x-4">
                                 <MapPin size={ 24 } />
 
                                 <ul className="flex flex-col">
-                                    <li className="text-neutral-300/75">Visit us</li>
-                                    <li className="text-neutral-300/75">Say hello at our Office HQ.</li>
-                                    <li className="text-neutral-300/75">123 Oak Street, Willowville, USA</li>
+                                    <li className="text-neutral-300/75 text-center">Visit us</li>
+                                    <li className="text-neutral-300/75 text-center">Say hello at our Office HQ.</li>
+                                    <li className="text-neutral-300/75 text-center">123 Oak Street, Mandaluyong, Philippines</li>
                                 </ul>
                             </div>
                         </li>
                         <li className="text-neutral-300/75 leading-6 text-[18px]">
-                            <div className="flex items-start gap-x-4">
+                            <div className="flex flex-col md:flex-row items-center md:items-start gap-y-4 md:gap-x-4">
                                 <PhoneCall size={ 24 } />
 
                                 <ul className="flex flex-col">
-                                    <li className="text-neutral-300/75">Email us</li>
-                                    <li className="text-neutral-300/75">We’re available from Mon-Fri, 9am to 6pm.</li>
-                                    <li className="text-neutral-300/75">123 Oak Street, Willowville, USA</li>
+                                    <li className="text-neutral-300/75 text-center">Call us</li>
+                                    <li className="text-neutral-300/75 text-center">We’re available from Mon-Fri, 9am to 6pm.</li>
+                                    <li className="text-neutral-300/75 text-center">+63 9123456789</li>
                                 </ul>
                             </div>
                         </li>
                     </ul>
-                </div>
+                </List>
             </div>
 
             <div className="border border-neutral-400 w-full my-14"></div>

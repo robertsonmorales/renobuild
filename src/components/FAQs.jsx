@@ -5,12 +5,14 @@ import { MessageCircle } from "react-feather";
 
 const FAQs = () => {
     return(
-        <div className="bg-white md:px-6 lg:px-24 md:py-12 lg:py-20 flex flex-col gap-y-16" id="faqs">
+        <div className="bg-white px-6 lg:px-24 py-12 lg:py-20 flex flex-col gap-y-16" id="faqs">
             <Subheadline 
                 subheadline="Frequently <br> Asked Questions"
                 description="Can't find the answer? Chat to us"
                 icon={ MessageCircle }
-            />
+            >
+                <MessageCircle />
+            </Subheadline>
             
             <Accordion />
 
