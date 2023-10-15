@@ -11,7 +11,7 @@ const Project = ({ service_type, description, image }) => {
     };
 
     return (
-        <div className="flex flex-col border border-neutral-300 rounded-3xl p-2 z-10 h-96 relative transition-all duration-300 ease-in-out hover:opacity-95 hover:shadow-2xl hover:scale-y-105"
+        <div className="flex flex-col border border-neutral-300 rounded-3xl p-2 z-10 h-96 relative transition-all duration-300 ease-in-out hover:opacity-9 hover:shadow-2xl"
             dir="ltr"
             style={styling}>
 
@@ -22,9 +22,9 @@ const Project = ({ service_type, description, image }) => {
                 </a>
             </div>
 
-            <div className="flex flex-col gap-y-1 bg-white shadow-xl rounded-2xl p-4 absolute bottom-2 left-2 right-2">
+            <div className="flex flex-col gap-y-1 bg-white rounded-2xl p-4 absolute bottom-2 left-2 right-2">
                 <span className="text-orange-500 text-sm">{ service_type }</span>
-                <p className="text-[18px] text-neutral-600">{ description }</p>
+                <p className="text-base lg:text-[18px] text-neutral-600">{ description }</p>
             </div>
 
         </div>
@@ -34,7 +34,7 @@ const Project = ({ service_type, description, image }) => {
 const RecentProjects = () => {
     return(
         <section className="bg-white px-6 lg:px-24 py-12 lg:py-20" id="projects">
-            <div className="flex flex-col gap-y-12 lg:gap-y-16">
+            <div className="flex flex-col gap-y-10 lg:gap-y-16">
                 <Subheadline
                     subheadline="Our Recent Projects"
                     description="At Renobuild, we take pride in turning dreams into reality through our exceptional project execution. With meticulous planning, expert craftsmanship, and unwavering attention to detail, we bring your vision to life, creating spaces that inspire and delight. From concept to completion, our dedicated team works tirelessly to ensure every aspect of your project is handled with precision and care. Trust Renobuild to make your dream project a stunning reality that exceeds your expectations."
@@ -55,7 +55,8 @@ const RecentProjects = () => {
                     <a href="/view-more" className="text-amber-600 font-medium font-base hover:underline">View More</a>
                 </div>
 
-                <div className="w-80 h-80 rounded-full bg-orange-500/50 blur-xxl absolute translate-x-1/2 translate-y-1/2 z-0"></div>
+                <div className="w-56 h-56 lg:w-80 lg:h-80 rounded-full bg-orange-500/50 blur-xxl absolute z-0 pointer-events-none"></div>
+                
             </div>
         </section>
     )

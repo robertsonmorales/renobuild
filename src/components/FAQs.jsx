@@ -5,7 +5,7 @@ import { MessageCircle } from "react-feather";
 
 const FAQs = () => {
     return(
-        <section className="bg-white px-6 lg:px-24 py-12 lg:py-20 flex flex-col gap-y-16" id="faqs">
+        <section className="bg-white px-6 lg:px-24 py-12 lg:py-20 flex flex-col gap-y-10 lg:gap-y-16" id="faqs">
             <Subheadline 
                 subheadline="Frequently <br> Asked Questions"
                 description="Can't find the answer? Chat to us"
@@ -15,7 +15,7 @@ const FAQs = () => {
             
             <Accordion />
 
-            <div className="w-80 h-80 rounded-full bg-amber-500/50 blur-xxl absolute translate-x-1/2 translate-y-1/2 z-0 pointer-events-none"></div>
+            <div className="w-56 h-56 lg:w-80 lg:h-80 rounded-full bg-red-500/50 blur-xxl absolute z-0 pointer-events-none"></div>
 
         </section>
     );
