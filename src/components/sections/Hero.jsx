@@ -1,9 +1,14 @@
 import React from "react";
-import HeroImage from "../img/hero.jpg";
+import HeroImage from "../../img/hero.jpg";
+import HeroPattern from "../../img/bg-pattern.webp";
 
 const Hero = () => {
+    const herStyling = {
+        backgroundImage: `url(${ HeroPattern })`
+    }
     return(
-        <section className="bg-sky-100/50 flex justify-center items-center flex-col gap-8 py-6 px-6 lg:px-24 lg:pb-20">
+        <section className="bg-sky-100/50 flex justify-center items-center flex-col gap-8 py-6 px-6 lg:px-24 lg:pb-20"
+            style={ herStyling }>
             <div className="text-left lg:text-center">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Unleash the Full Potential of Your Space with our Expertise!</h1>
                 <p className="text-base lg:text-[18px] text-slate-600">Transform Your Space Where Quality Construction Meets Creative Renovation</p>

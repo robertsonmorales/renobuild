@@ -1,6 +1,6 @@
 import React from "react";
-import Subheadline from "./Subheadline";
-import { RenobuildServices } from "../data/data";
+import Subheadline from "../Subheadline";
+import { RenobuildServices } from "../../data/data";
 
 const ServiceCard = ({ icon, title, description }) => {
     return (

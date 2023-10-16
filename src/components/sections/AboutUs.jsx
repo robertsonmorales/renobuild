@@ -1,5 +1,5 @@
 import React from "react";
-import AboutImage from '../img/about.webp';
+import AboutImage from '../../img/about.webp';
 
 const data = [
     { count: 15, label: "Successful <br> Years" },

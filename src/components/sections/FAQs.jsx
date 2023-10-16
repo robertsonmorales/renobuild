@@ -1,6 +1,6 @@
 import React from "react";
-import Subheadline from "./Subheadline";
-import Accordion from "./Accordion";
+import Subheadline from "../Subheadline";
+import Accordion from "../Accordion";
 import { MessageCircle } from "react-feather";
 
 const FAQs = () => {

@@ -1,7 +1,7 @@
 import React from "react";
-import Subheadline from "./Subheadline";
+import Subheadline from "../Subheadline";
 import { ExternalLink } from "react-feather";
-import { RenobuildRecentProjects } from "../data/data";
+import { RenobuildRecentProjects } from "../../data/data";
 
 const Project = ({ service_type, description, image }) => {
     const styling = {

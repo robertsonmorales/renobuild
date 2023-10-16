@@ -9,7 +9,7 @@ import { Instagram,
     PhoneCall
 } from "react-feather";
 
-import List from "./List";
+import List from "../List";
 
 const services = [
     {
