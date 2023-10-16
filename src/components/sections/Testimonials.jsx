@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Subheadline from "./Subheadline";
-import { RenobuildTestimonials } from "../data/data";
+import Subheadline from "../Subheadline";
+import { RenobuildTestimonials } from "../../data/data";
 
 const TestimonialCard = ({ comment, name, company, profilePic }) => {
     return (

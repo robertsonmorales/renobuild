@@ -1,5 +1,5 @@
 import React from "react";
-import { BaseInput, BaseTextArea } from "./BaseFormInput";
+import { BaseInput, BaseTextArea } from "../BaseFormInput";
 import { User, AtSign, PhoneCall } from "react-feather";
 
 const Contact = () => {
