@@ -54,8 +54,7 @@ const Contact = () => {
                     <button className="bg-amber-600 p-4 rounded-2xl shadow-2xl text-white hover:bg-amber-600/75 active:bg-amber-600">Let’s get started!</button>
                 </div>
             </div>
-
-            {/* <div className="w-80 h-80 rounded-full bg-red-500/50 blur-xxl absolute translate-x-1/2 translate-y-1/2 z-0 pointer-events-none"></div> */}
+            
             <div className="w-56 h-56 lg:w-80 lg:h-80 rounded-full bg-orange-500/50 blur-xxl absolute z-0 pointer-events-none"></div>
         </section>
     );
