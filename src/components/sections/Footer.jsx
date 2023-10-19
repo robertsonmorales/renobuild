@@ -81,7 +81,7 @@ const Footer = () => {
                 <div className="flex flex-col gap-y-6">
                     <h3 className="text-3xl font-bold text-neutral-100">Renobuild<span className="text-amber-600">.</span></h3>
                     
-                    <p className="text-neutral-300/75 text-[18px]">We are a leading construction services company dedicated to transforming spaces and creating exceptional environments.</p>
+                    <p className="text-neutral-300/75 text-base">We are a leading construction services company dedicated to transforming spaces and creating exceptional environments.</p>
 
                     <ul className="flex justify-start gap-x-4">
                         <li className="text-neutral-300/75 transition-all duration-300 ease-out hover:text-neutral-100">
@@ -116,7 +116,7 @@ const Footer = () => {
                 <List title="Quick Links" listItems={ quickLink }></List>
                 <List title="Contacts" isRaw={ true }>
                     <ul className="flex flex-col justify-center gap-y-10">
-                        <li className="text-base lg:text-[18px] text-neutral-300/75 leading-6">
+                        <li className="text-base text-neutral-300/75 leading-6">
                             <div className="flex flex-col md:flex-row gap-y-4 md:gap-x-4">
                                 <MessageCircle size={ 24 } />
 
@@ -127,7 +127,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </li>
-                        <li className="text-base lg:text-[18px] text-neutral-300/75 leading-6">
+                        <li className="text-base text-neutral-300/75 leading-6">
                             <div className="flex flex-col md:flex-row gap-y-4 md:gap-x-4">
                                 <MapPin size={ 24 } />
 
@@ -138,7 +138,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </li>
-                        <li className="text-base lg:text-[18px] text-neutral-300/75 leading-6">
+                        <li className="text-base text-neutral-300/75 leading-6">
                             <div className="flex flex-col md:flex-row gap-y-4 md:gap-x-4">
                                 <PhoneCall size={ 24 } />
 
@@ -156,7 +156,7 @@ const Footer = () => {
             <div className="border border-neutral-400 w-full my-14"></div>
 
             <div className="text-left md:text-center">
-                <p className="text-base lg:text-[18px] text-neutral-300/75">© 2023 Renobuild. All Rights Reserved</p>
+                <p className="text-base text-neutral-300/75">© 2023 Renobuild. All Rights Reserved</p>
             </div>
         </footer>
     );

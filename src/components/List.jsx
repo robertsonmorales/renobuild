@@ -2,7 +2,7 @@ import React from "react";
 
 const ListItem = ({ route, name }) => {
     return (
-        <li className="text-base lg:text-[18px] text-neutral-300/75 leading-6 transition-all duration-300 ease-out hover:text-neutral-100">
+        <li className="text-base text-neutral-300/75 leading-6 transition-all duration-300 ease-out hover:text-neutral-100">
             {/* { (isClickable && isClickable ? <a href="www.google.com?q=cat" target="_blank">{ children }</a> : { children }) } */}
             <a href={`/${ route }`}>{ name }</a>
         </li>
@@ -11,7 +11,7 @@ const ListItem = ({ route, name }) => {
 
 const List = ({ title, listItems = [], isRaw = false, children }) => {
     return (
-        <div className="flex flex-col gap-y-6">
+        <div className="flex flex-col gap-y-6 pl-6">
             <h4 className="text-neutral-100 text-2xl font-bold">{ title }</h4>
         
             <ul className="flex flex-col gap-y-4">

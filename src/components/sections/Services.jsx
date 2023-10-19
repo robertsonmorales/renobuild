@@ -16,7 +16,10 @@ const ServiceCard = ({ icon, title, description }) => {
 
             <a href="/read-more" 
                 rel="noreferrer noopener" 
-                className="text-base lg:text-[18px] text-neutral-600 hover:text-amber-700 active:text-neutral-600">Read More →</a>
+                className="text-base lg:text-[18px] text-neutral-600 hover:text-amber-700 active:text-neutral-600">
+                <span className="mr-2">Read More</span>
+                <span> →</span>
+            </a>
             
         </div>
     );

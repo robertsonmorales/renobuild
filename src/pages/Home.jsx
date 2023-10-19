@@ -1,4 +1,6 @@
 import React from "react";
+import { Helmet } from "react-helmet";
+
 import Main from "../components/Main";
 import Navigation from "../components/Navigation";
 
@@ -13,7 +15,12 @@ import Footer from "../components/sections/Footer";
 
 export default function Home() {
     return(
-        <div className="container bg-sky-100/50">
+        <div className="bg-sky-100/50">
+            <Helmet>
+                <title>Home | Renobuild</title>
+                <link rel="canonical" href="https://renobuild.vercel.app" />
+            </Helmet>
+
             <Navigation />
             
             <Main>

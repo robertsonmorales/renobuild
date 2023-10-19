@@ -15,10 +15,10 @@ const Hero = () => {
             </div>
 
             <div className="w-full flex flex-col md:flex-row lg:justify-center gap-2 md:gap-4">
-                <a href="#services" 
-                    className="text-base lg:text-[18px] px-6 py-3 flex justify-center items-center rounded-2xl shadow-2xl bg-amber-700 text-white duration-200 active:shadow-1xl hover:bg-amber-600 active:bg-amber-700">Our Services</a>
+                <a href="#contact-us" 
+                    className="text-base lg:text-[18px] px-6 py-3 flex justify-center items-center rounded-2xl shadow-2xl bg-amber-700 text-white duration-200 active:shadow-1xl hover:bg-amber-600 active:bg-amber-700">Get a Quote</a>
                 <a href="#projects" 
-                    className="text-base lg:text-[18px] pl-10 pr-6 lg:px-6 py-3 flex justify-center rounded-2xl shadow-2xl duration-200 border-2 border-solid border-slate-700 hover:bg-sky-950/75 hover:text-white active:bg-sky-950 active:text-white">See Projects →</a>
+                    className="text-base lg:text-[18px] pl-10 pr-6 lg:px-6 py-3 flex justify-center rounded-2xl shadow-2xl duration-200 border-2 border-solid border-slate-700 hover:bg-sky-950/75 hover:text-white active:bg-sky-950 active:text-white">Our Projects →</a>
             </div>
 
             <div className="flex items-center justify-center w-full z-10">
