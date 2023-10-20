@@ -83,7 +83,7 @@ export const RenobuildTestimonials = [
         profilePic: ProfilePic3
     },
     {
-        comment: "“I want to express my utmost satisfaction with EliteBuilders Construction and their representative, Jason Thompson. Jason's expertise, communication, and dedication to customer satisfaction were exceptional. The team at EliteBuilders Construction completed our project with precision and delivered outstanding results. Their attention to detail and commitment to excellence were impressive. I highly recommend EliteBuilders Construction and Jason Thompson for their top-notch service and professionalism.”",
+        comment: "“I want to express my utmost satisfaction with Renobuild Construction and their representative, Jason Thompson. Jason's expertise, communication, and dedication to customer satisfaction were exceptional. The team at Renobuild Construction completed our project with precision and delivered outstanding results. Their attention to detail and commitment to excellence were impressive. I highly recommend Renobuild Construction and Jason Thompson for their top-notch service and professionalism.”",
         name: "Mark Davis",
         company: "@PizzaHut",
         profilePic: ProfilePic2

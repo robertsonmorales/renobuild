@@ -13,6 +13,8 @@ import FAQs from "../components/sections/FAQs";
 import Contact from "../components/sections/Contact";
 import Footer from "../components/sections/Footer";
 
+import Thumbnail from "../img/thumbnail.webp"
+
 export default function Home() {
     return(
         <div className="bg-sky-100/50">
@@ -27,14 +29,14 @@ export default function Home() {
                 <meta property="og:url" content="https://renobuild.vercel.app" />
                 <meta property="og:title" content="Construction Services | Renobuild" />
                 <meta property="og:description" content="We are passionate about crafting excellence in every aspect of construction. With a relentless commitment to quality, innovation, and customer satisfaction, we redefine spaces and bring your visions to life. " />
-                <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+                <meta property="og:image" content={ Thumbnail } />
 
                 {/* Twitter */}
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:url" content="https://renobuild.vercel.app" />
                 <meta property="twitter:title" content="Construction Services | Renobuild" />
                 <meta property="twitter:description" content="We are passionate about crafting excellence in every aspect of construction. With a relentless commitment to quality, innovation, and customer satisfaction, we redefine spaces and bring your visions to life. " />
-                <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+                <meta property="twitter:image" content={ Thumbnail } />
 
                 {/* Meta Tags Generated with https://metatags.io */}
                 <link rel="canonical" href="https://renobuild.vercel.app" />
