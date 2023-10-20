@@ -6,7 +6,7 @@ const TestimonialCard = ({ comment, name, company, profilePic }) => {
     return (
         <div className="flex items-start">
             <div className="flex flex-col gap-y-6 bg-slate-100 shadow-3xl border border-neutral-300 rounded-3xl p-6 z-10 transition-all duration-300 ease-linear hover:bg-white hover:shadow-2xl">
-                <blockquote className="text-base lg:text-2xl text-sky-950">{ comment }</blockquote>
+                <blockquote className="text-[18px]] lg:text-2xl text-sky-950">{ comment }</blockquote>
 
                 <div className="flex flex-col md:flex-row md:items-center gap-4">
                     <img src={ profilePic }

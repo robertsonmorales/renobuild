@@ -17,7 +17,26 @@ export default function Home() {
     return(
         <div className="bg-sky-100/50">
             <Helmet>
-                <title>Home | Renobuild</title>
+                {/* Primary Meta Tags */}
+                <title>Construction Services | Renobuild</title>
+                <meta name="title" content="Construction Services | Renobuild" />
+                <meta name="description" content="We are passionate about crafting excellence in every aspect of construction. With a relentless commitment to quality, innovation, and customer satisfaction, we redefine spaces and bring your visions to life. " />
+
+                {/* Open Graph / Facebook */}
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://renobuild.vercel.app" />
+                <meta property="og:title" content="Construction Services | Renobuild" />
+                <meta property="og:description" content="We are passionate about crafting excellence in every aspect of construction. With a relentless commitment to quality, innovation, and customer satisfaction, we redefine spaces and bring your visions to life. " />
+                <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+                {/* Twitter */}
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content="https://renobuild.vercel.app" />
+                <meta property="twitter:title" content="Construction Services | Renobuild" />
+                <meta property="twitter:description" content="We are passionate about crafting excellence in every aspect of construction. With a relentless commitment to quality, innovation, and customer satisfaction, we redefine spaces and bring your visions to life. " />
+                <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+                {/* Meta Tags Generated with https://metatags.io */}
                 <link rel="canonical" href="https://renobuild.vercel.app" />
             </Helmet>
 
