@@ -10,7 +10,7 @@ const ServiceCard = ({ icon, title, description }) => {
                 width={ 40 } 
                 height={ 40 } />
 
-            <h5 className="font-bold text-2xl">{ title }</h5>
+            <h3 className="font-bold text-2xl">{ title }</h3>
 
             <p className="text-base lg:text-[18px] text-neutral-600">{ description }</p>
 

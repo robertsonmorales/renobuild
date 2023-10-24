@@ -17,7 +17,7 @@ import Thumbnail from "../img/thumbnail.webp"
 
 export default function Home() {
     return(
-        <div className="bg-sky-100/50">
+        <>
             <Helmet>
                 {/* Primary Meta Tags */}
                 <title>Construction Services | Renobuild</title>
@@ -41,20 +41,21 @@ export default function Home() {
                 {/* Meta Tags Generated with https://metatags.io */}
                 <link rel="canonical" href="https://renobuild.vercel.app" />
             </Helmet>
+            <div className="bg-sky-100/50">
+                <Navigation />
+                
+                <Main>
+                    <Hero />
+                    <Services />
+                    <RecentProjects />
+                    <AboutUs />
+                    <Testimonials />
+                    <FAQs />
+                    <Contact />
+                </Main>
 
-            <Navigation />
-            
-            <Main>
-                <Hero />
-                <Services />
-                <RecentProjects />
-                <AboutUs />
-                <Testimonials />
-                <FAQs />
-                <Contact />
-            </Main>
-
-            <Footer />
-        </div>
+                <Footer />
+            </div>
+        </>
     )
 }

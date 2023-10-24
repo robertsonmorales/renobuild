@@ -16,14 +16,16 @@ const Project = ({ service_type, description, image }) => {
             style={styling}>
 
             <div className="flex items-center justify-end">
-                <a href="/view-project" 
-                    className="bg-slate-100 rounded-full w-11 h-11 flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-amber-700 hover:text-white hover:shadow-2xl">
+                <button type="button"
+                    title={ service_type }
+                    className="bg-white rounded-full w-11 h-11 flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-amber-700 hover:text-white hover:shadow-2xl">
                     <ExternalLink size={20} />
-                </a>
+                    <span className="hidden">View Project</span>
+                </button>
             </div>
 
             <div className="flex flex-col gap-y-1 bg-white rounded-2xl p-4 absolute bottom-2 left-2 right-2">
-                <span className="text-orange-500 text-sm">{ service_type }</span>
+                <span className="text-amber-700 text-sm">{ service_type }</span>
                 <p className="text-base lg:text-[18px] text-neutral-600">{ description }</p>
             </div>
 
@@ -52,7 +54,7 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="text-center">
-                    <a href="/view-more" className="text-amber-600 font-medium font-base hover:underline">View More</a>
+                    <a href="/view-more" className="text-amber-700 font-medium font-base hover:underline">View More</a>
                 </div>
 
                 <div className="w-56 h-56 lg:w-80 lg:h-80 rounded-full bg-orange-500/50 blur-xxl absolute z-0 pointer-events-none"></div>

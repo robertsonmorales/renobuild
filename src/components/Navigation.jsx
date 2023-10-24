@@ -51,7 +51,7 @@ export default function Navigation() {
                 </div>                
 
                 <div className="grow-0 hidden lg:inline">
-                    <a href="tel:+639123456789" className="text-[18px] flex items-center text-amber-600">
+                    <a href="tel:+639123456789" className="text-[18px] flex items-center text-amber-700">
                         <Phone />
                         <span className="ml-1">+63 9123456789</span>
                     </a>

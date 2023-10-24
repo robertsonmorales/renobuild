@@ -51,7 +51,7 @@ const Contact = () => {
                         isRequired={ true }
                     />
 
-                    <button className="bg-amber-600 p-4 rounded-2xl shadow-2xl text-white hover:bg-amber-600/75 active:bg-amber-600">Let’s get started!</button>
+                    <button className="bg-amber-700 p-4 rounded-2xl shadow-2xl text-white hover:bg-amber-700/75 active:bg-amber-700">Let’s get started!</button>
                 </div>
             </div>
             

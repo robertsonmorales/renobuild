@@ -17,7 +17,7 @@ const TestimonialCard = ({ comment, name, company, profilePic }) => {
                     />
 
                     <div className="flex flex-col items-start">
-                        <h5 className="text-xl lg:text-2xl font-bold">{ name }</h5>
+                        <h3 className="text-xl lg:text-2xl font-bold">{ name }</h3>
                         <p className="text-sm text-neutral-600">{ company }</p>
                     </div>
                 </div>
