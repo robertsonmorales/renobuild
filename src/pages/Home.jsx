@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
+
+import Preloader from '../components/ui/Preloader';
 
 import Main from "../components/Main";
 import Navigation from "../components/Navigation";
@@ -13,9 +15,17 @@ import FAQs from "../components/sections/FAQs";
 import Contact from "../components/sections/Contact";
 import Footer from "../components/sections/Footer";
 
-import Thumbnail from "../img/thumbnail.webp"
+import Thumbnail from "../img/thumbnail.webp";
 
 export default function Home() {
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 3000);
+    }, []);
+
     return(
         <>
             <Helmet>
@@ -41,21 +51,25 @@ export default function Home() {
                 {/* Meta Tags Generated with https://metatags.io */}
                 <link rel="canonical" href="https://renobuild.vercel.app" />
             </Helmet>
-            <div className="bg-sky-100/50">
-                <Navigation />
-                
-                <Main>
-                    <Hero />
-                    <Services />
-                    <RecentProjects />
-                    <AboutUs />
-                    <Testimonials />
-                    <FAQs />
-                    <Contact />
-                </Main>
 
-                <Footer />
-            </div>
+            { isLoading 
+                ? <Preloader /> 
+                : <div className="bg-sky-100/50">
+                    <Navigation />
+                    
+                    <Main>
+                        <Hero />
+                        <Services />
+                        <RecentProjects />
+                        <AboutUs />
+                        <Testimonials />
+                        <FAQs />
+                        <Contact />
+                    </Main>
+
+                    <Footer />
+                </div>
+            }
         </>
     )
 }
